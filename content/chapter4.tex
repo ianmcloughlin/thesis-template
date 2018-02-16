@@ -1,13 +1,18 @@
 \chapter{Prototype code}
+Look at my nice program in Listing \ref{code:tuesday}.
 
+\begin{listing}[ht]
+  \begin{minted}{python}
+# Ian McLoughlin, 2018-02-01
+# Is it Tuesday?
 
-\section{XML}
-Here's some nicely formatted XML:
-\begin{minted}{xml}
-<this>
-  <looks lookswhat="good">
-    Good
-  </looks>
-</this>
-\end{minted}
+import datetime
 
+if datetime.datetime.today().weekday() == 1:
+  print("Yay! It is Tuesday.")
+else:
+  print("Unfortunately it is not Tuesday.")
+  \end{minted}
+  \caption{Is it Tuesday?}
+  \label{code:tuesday}
+\end{listing}
