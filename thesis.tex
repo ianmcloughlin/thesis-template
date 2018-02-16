@@ -1,0 +1,111 @@
+\documentclass[12pt, a4paper, oneside, openany, dvipsnames, hidelinks]{book}
+
+  % Enables the use of colour. 
+  \usepackage{xcolor}
+  % Syntax high-lighting for code. Requires Python's pygments.
+  \usepackage{minted}
+  % Enables the use of umlauts and other accents.
+  \usepackage[utf8]{inputenc}
+  % Diagrams.
+  \usepackage{tikz}
+  % Settings for captions, such as sideways captions.
+  \usepackage{caption}
+  % Symbols for units, like degrees and ohms.
+  \usepackage{gensymb}
+  % Latin modern fonts - better looking than the defaults.
+  \usepackage{lmodern}
+  % Allows for columns spanning multiple rows in tables.
+  \usepackage{multirow}
+  % Better looking tables, including nicer borders.
+  \usepackage{booktabs}
+  % More math symbols.
+  \usepackage{amssymb}
+  % More math fonts, like mathbb.
+  \usepackage{amsfonts}
+  % More math layouts, equation arrays, etc.
+  \usepackage{amsmath}
+  % More theorem environments.
+  \usepackage{amsthm}
+  % More column formats for tables.
+  \usepackage{array}
+  % Adjust the sizes of box environments.
+  \usepackage{adjustbox}
+  % Better looking single quotes in verbatim and minted environments.
+  \usepackage{upquote}
+  % Better blank space decisions.
+  \usepackage{xspace}
+  % Better looking tikz trees.
+  \usepackage{forest}
+  % URLs.
+  \usepackage{hyperref}
+  % For plotting.
+  \usepackage{pgfplots}
+  % For filler.
+  \usepackage{lipsum}
+  
+  % Various tikz libraries.
+  % For drawing mind maps.
+  \usetikzlibrary{mindmap}
+  % For adding shadows.
+  \usetikzlibrary{shadows}
+  % Extra arrows tips.
+  \usetikzlibrary{arrows.meta}
+  % Old arrows.
+  \usetikzlibrary{arrows}
+  % Automata.
+  \usetikzlibrary{automata}
+  % For more positioning options.
+  \usetikzlibrary{positioning}
+  % Creating chains of nodes on a line.
+  \usetikzlibrary{chains}
+  % Fitting node to contain set of coordinates.
+  \usetikzlibrary{fit}
+  % Extra shapes for drawing.
+  \usetikzlibrary{shapes}
+  % For markings on paths.
+  \usetikzlibrary{decorations.markings}
+  % For advanced calculations.
+  \usetikzlibrary{calc}
+  
+  % GMIT colours.
+  \definecolor{gmitblue}{RGB}{20,134,225}
+  \definecolor{gmitred}{RGB}{220,20,60}
+  \definecolor{gmitgrey}{RGB}{67,67,67}
+  
+  % Tell minted to use the following colour scheme. 
+  \usemintedstyle{manni}
+  
+  %% Change these:
+  \newcommand{\thesistitle}{The Art of Computer Programming -- A difficult book to understand}
+  \newcommand{\thesisauthor}{Ian McLoughlin}
+  \newcommand{\thesisadvisor}{Dr Ian McLoughlin \\[1mm] Dr Ian McLoughlin \\[1mm] Dr Ian McLoughlin}
+  \newcommand{\thesisdegree}{Master of Science}
+  \newcommand{\thesisdate}{\today}
+  \newcommand{\thesisinstitute}{Galway-Mayo Institute of Technology}
+  \newcommand{\thesisdepartment}{Department of Computer Science and Applied Physics}
+  %% End of things to change.
+
+  % Begin the document.  
+  \begin{document}
+    % Include the titlepage  
+    \input{content/titlepage.tex}
+    
+    % Set the correct page number.
+    \setcounter{page}{2}
+
+    % Insert the table of contents.
+    \tableofcontents
+
+    % Include the chapter.
+    \input{content/abstract.tex}
+    \input{content/chapter1.tex}
+    \input{content/chapter2.tex}
+    \input{content/chapter3.tex}
+    \input{content/chapter4.tex}
+    \input{content/chapter5.tex}
+    \input{content/chapter6.tex}
+
+    % Include the bibliography with IEEE style.
+    \bibliographystyle{ieeetr}
+    \bibliography{bibliography}
+  \end{document}
