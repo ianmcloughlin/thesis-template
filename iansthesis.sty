@@ -1,0 +1,90 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{iansthesis}[2021/04/13 Preamble for Ian's thesis template.]
+
+% Enables the use of colour.
+\usepackage{xcolor}
+% Syntax high-lighting for code. Requires Python's pygments.
+\usepackage{minted}
+% Enables the use of umlauts and other accents.
+\usepackage[utf8]{inputenc}
+% Diagrams.
+\usepackage{tikz}
+% More math symbols.
+\usepackage{amssymb}
+% More math layouts, equation arrays, etc.
+\usepackage{amsmath}
+% More math fonts, like mathbb.
+\usepackage{amsfonts}
+% More theorem environments.
+\usepackage{amsthm}
+% Adjust the sizes of box environments.
+\usepackage{adjustbox}
+% Better looking single quotes in verbatim and minted environments.
+\usepackage{upquote}
+% Better looking tikz trees.
+\usepackage{forest}
+% URLs.
+\usepackage{hyperref}
+% For plotting.
+\usepackage{pgfplots}
+% Images.
+\usepackage{graphicx}
+% Nice symbols for degrees, etc.
+\usepackage{gensymb}
+% Nicer tables.
+\usepackage{tabularx}
+% More nicer tables.
+\usepackage{booktabs}
+% Settings for captions, such as sideways captions.
+\usepackage{caption}
+% Latin modern fonts - better looking than the defaults.
+\usepackage{lmodern}
+% Allows for columns spanning multiple rows in tables.
+\usepackage{multirow}
+% More column formats for tables.
+\usepackage{array}
+% Better blank space decisions.
+\usepackage{xspace}
+% Filler.
+\usepackage{lipsum}
+
+% Various tikz libraries.
+% For drawing mind maps.
+\usetikzlibrary{mindmap}
+% For adding shadows.
+\usetikzlibrary{shadows}
+% Extra arrows tips.
+\usetikzlibrary{arrows.meta}
+% Old arrows.
+\usetikzlibrary{arrows}
+% Automata.
+\usetikzlibrary{automata}
+% For more positioning options.
+\usetikzlibrary{positioning}
+% Creating chains of nodes on a line.
+\usetikzlibrary{chains}
+% Fitting node to contain set of coordinates.
+\usetikzlibrary{fit}
+% Extra shapes for drawing.
+\usetikzlibrary{shapes}
+% For markings on paths.
+\usetikzlibrary{decorations.markings}
+% For advanced calculations.
+\usetikzlibrary{calc}
+
+% Make Tikz do new stuff.
+\pgfplotsset{compat=1.16}
+
+% GMIT colours.
+\definecolor{gmitblue}{RGB}{20,134,225}
+\definecolor{gmitred}{RGB}{220,20,60}
+\definecolor{gmitgrey}{RGB}{67,67,67}
+
+\setlength{\columnseprule}{0.2pt}
+\setlength{\columnsep}{14mm}
+
+% Tell minted to use the following colour scheme. 
+\usemintedstyle{manni}
+% Set some minted options.
+\setminted{frame=lines, framesep=2mm, baselinestretch=1.2, fontsize=\footnotesize, linenos}
+
