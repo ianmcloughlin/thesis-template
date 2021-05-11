@@ -60,6 +60,7 @@ document.
 ```bibtex
 @article{einstein,
     author = "Albert Einstein",
+    title = "On the electrodynamics of moving bodies",
 ...
 }
 ```
