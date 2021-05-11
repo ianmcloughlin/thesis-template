@@ -59,7 +59,7 @@ document.
 
 ```bibtex
 @article{einstein,
-    author =       "Albert Einstein",
+    author = "Albert Einstein",
 ...
 }
 ```
