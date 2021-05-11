@@ -57,7 +57,7 @@ You can change this name in the `bibliography.bib` file to any string of
 (reasonable) characers you want and then refer to it using that name in your
 document.
 
-```tex
+```bibtex
 @article{einstein,
     author =       "Albert Einstein",
 ...
