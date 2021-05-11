@@ -1,6 +1,7 @@
 %!TEX root = ../thesis.tex
 
 \chapter{Introduction}
+\label{section:introduction}
 
 In the introduction, you should describe what your thesis is about, how the
 thesis is organised, and what the reader can expect as they read down through
@@ -9,9 +10,15 @@ The most important aspect of the introduction is to set the context for the
 rest of the thesis.
 You should sign-post for the reader the most important parts of your work and
 where they appear in the document.
-Don't forget to use any necessary references~\cite{einstein}.
+In \LaTeX, you should refer to sections, tables, and figures using commands
+rather than specifying a page or saying ``the table below''. The \texttt{ref}
+command will keep track of changes to the layout to the document. So, for
+example, I can just refer to Section \ref{section:literature} rather than
+worrying where that might move to in future.
+Note to refer to an item in the bibliography, you use the \texttt{cite} command,
+which should generally be placed after a \texttt{tilde}(\texttt{\~}) rather than
+a space~\cite{einstein}.
 
-\lipsum[1-2]
 
 \section{Sections}
 You might use sections to break the introduction down into easier to read
