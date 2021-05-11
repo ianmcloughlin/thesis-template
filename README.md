@@ -66,7 +66,7 @@ document.
 ```
 Note that you can also list non-academic works in BibTeX.
 
-## Writing
+## Writing 
 
 There is a lot to LaTeX and it can be complicated, but the good news is you can
 get writing without knowing too much. Even if you can't get your document to
