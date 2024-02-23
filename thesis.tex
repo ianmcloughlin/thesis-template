@@ -1,28 +1,28 @@
-\documentclass[12pt, a4paper, oneside, openany, dvipsnames, hidelinks]{memoir}
+\documentclass[12pt, a4paper]{atu_thesis}
 
-\usepackage{iansthesis}
+% Bibliography.
+\addbibresource{content/bibliography.bib}
 
-  % Begin the document.  
-  \begin{document}
-    % Include the titlepage  
-    \input{content/titlepage.tex}
-    
-    % Set the correct page number.
-    \setcounter{page}{2}
+% Begin the document.  
+\begin{document}
+  
+  % Include the titlepage  
+  \input{content/titlepage.tex}
+  
+  % Set the correct page number.
+  \setcounter{page}{2}
 
-    % Insert the table of contents.
-    \tableofcontents
+  % Insert the table of contents.
+  \tableofcontents
 
-    % Include the chapter.
-    \input{content/abstract.tex}
-    \input{content/chapter1.tex}
-    \input{content/chapter2.tex}
-    \input{content/chapter3.tex}
-    \input{content/chapter4.tex}
-    \input{content/chapter5.tex}
-    \input{content/chapter6.tex}
+  % Include the chapter.
+  \input{content/abstract.tex}
+  \input{content/chapter1.tex}
+  \input{content/chapter2.tex}
+  \input{content/chapter3.tex}
+  \input{content/chapter4.tex}
+  \input{content/chapter5.tex}
+  \input{content/chapter6.tex}
 
-    % Include the bibliography with IEEE style.
-    \bibliographystyle{ieeetr}
-    \bibliography{bibliography}
-  \end{document}
+% End the document.
+\end{document}
