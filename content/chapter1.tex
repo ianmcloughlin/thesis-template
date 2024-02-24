@@ -61,3 +61,96 @@ You might even use subsections if you really need to.
 There are also subsubsections in \LaTeX, but be careful not to overdo it.
 
 \lipsum[1-2]
+
+\subsection{Maxwell's Equations}
+
+\subsubsection{Gauss's Law for Electricity}
+Gauss's Law for Electricity is one of the four fundamental equations in classical electromagnetism, formulated by Carl Friedrich Gauss.
+It describes the relationship between the electric flux through a closed surface and the electric charge enclosed within that surface.
+Mathematically, Gauss's Law for Electricity is expressed as:
+\[
+\oint_S \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\text{enc}}}{\varepsilon_0}
+\]
+Here's an explanation of the key components of Gauss's Law for Electricity:
+\begin{itemize}
+  \item $\oint_S$ represents a closed surface integral over a closed surface $S$. This means that we are summing the electric field ($\mathbf{E}$) over all infinitesimal areas ($d\mathbf{A}$) of the closed surface $S$.
+  
+  \item $\mathbf{E}$ is the electric field vector at each point on the surface. It represents the force experienced by a unit positive charge placed at that point.
+  
+  \item $d\mathbf{A}$ is a vector representing an infinitesimal area element of the surface. It is oriented perpendicular to the surface at each point.
+  
+  \item $Q_{\text{enc}}$ is the total electric charge enclosed within the closed surface $S$. This includes the sum of all positive and negative charges within the enclosed region.
+  
+  \item $\varepsilon_0$ is the permittivity of free space, a fundamental constant in electromagnetism. It represents the ability of a material to permit the formation of an electric field in response to an applied electric field.
+\end{itemize}
+
+In simpler terms, Gauss's Law for Electricity states that the total electric flux through a closed surface is proportional to the total electric charge enclosed within that surface, with the constant of proportionality being the permittivity of free space.
+In other words, it quantifies how much electric field passes through a closed surface due to the presence of electric charges inside that surface.
+
+
+\subsubsection{Gauss's Law for Magnetism}
+Gauss's Law for Magnetism states that the magnetic flux through any closed surface is always zero.
+Mathematically, it is expressed as:
+\[
+\oint_S \mathbf{B} \cdot d\mathbf{A} = 0
+\]
+Here's an explanation of the key components of Gauss's Law for Magnetism:
+\begin{itemize}
+  \item $\oint_S$ represents a closed surface integral over a closed surface $S$. This means that we are summing the magnetic field ($\mathbf{B}$) over all infinitesimal areas ($d\mathbf{A}$) of the closed surface $S$.
+  
+  \item $\mathbf{B}$ is the magnetic field vector at each point on the surface. Unlike electric fields, magnetic fields do not have sources or sinks (monopoles), so the magnetic flux through any closed surface is always zero.
+  
+  \item $d\mathbf{A}$ is a vector representing an infinitesimal area element of the surface. It is oriented perpendicular to the surface at each point.
+\end{itemize}
+
+In summary, Gauss's Law for Magnetism implies that there are no magnetic monopoles (isolated north or south poles), and the magnetic flux through any closed surface is always zero, indicating that magnetic field lines neither start nor end but always form closed loops.
+
+
+\subsubsection{Faraday's Law of Induction}
+Faraday's Law of Induction describes how a changing magnetic field induces an electromotive force (EMF) and hence an electric current in a conducting loop.
+Mathematically, it is expressed as:
+\[
+\oint_C \mathbf{E} \cdot d\boldsymbol{\ell} = -\frac{d\Phi_B}{dt}
+\]
+Here's an explanation of the key components of Faraday's Law of Induction:
+\begin{itemize}
+  \item $\oint_C$ represents a closed path integral around a closed loop $C$. This means that we are summing the electric field ($\mathbf{E}$) around the closed loop $C$.
+  
+  \item $\mathbf{E}$ is the induced electric field within the conducting loop. It is created by a changing magnetic flux through the loop according to Faraday's law.
+  
+  \item $d\boldsymbol{\ell}$ is a vector representing an infinitesimal displacement along the closed loop $C$.
+  
+  \item $d\Phi_B/dt$ represents the rate of change of magnetic flux ($\Phi_B$) through the surface enclosed by the loop with respect to time. The negative sign indicates that the induced EMF and hence the induced electric field opposes the change in magnetic flux.
+\end{itemize}
+
+In summary, Faraday's Law of Induction states that a changing magnetic field induces an electric field and hence an electromotive force (EMF) in any closed conducting loop, producing an electric current in the loop. This phenomenon forms the basis of many practical devices, such as electric generators and transformers.
+
+
+\subsubsection{Ampere's Circuital Law (with Maxwell's addition)}
+
+Amp\`ere's Circuital Law relates the magnetic field around a closed loop to the electric current passing through the loop. With Maxwell's addition, it accounts for the displacement current, which arises from changing electric fields. Mathematically, it is expressed as:
+
+\[
+\oint_C \mathbf{B} \cdot d\boldsymbol{\ell} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{d\Phi_E}{dt} \right)
+\]
+
+Here's an explanation of the key components of Amp\`ere's Circuital Law (with Maxwell's addition):
+
+\begin{itemize}
+  \item $\oint_C$ represents a closed path integral around a closed loop $C$. This means that we are summing the magnetic field ($\mathbf{B}$) around the closed loop $C$.
+  
+  \item $\mathbf{B}$ is the magnetic field vector at each point along the closed loop $C$.
+  
+  \item $d\boldsymbol{\ell}$ is a vector representing an infinitesimal displacement along the closed loop $C$.
+  
+  \item $\mu_0$ is the permeability of free space, a fundamental constant in electromagnetism.
+  
+  \item $I_{\text{enc}}$ is the total current passing through the loop $C$. This includes both conduction current and displacement current.
+  
+  \item $\varepsilon_0$ is the permittivity of free space, another fundamental constant in electromagnetism.
+  
+  \item $\frac{d\Phi_E}{dt}$ represents the rate of change of electric flux ($\Phi_E$) through the surface enclosed by the loop with respect to time. This gives rise to the displacement current, which is included in Amp\`ere's law with Maxwell's addition.
+\end{itemize}
+
+In summary, Amp\`ere's Circuital Law with Maxwell's addition states that the magnetic field around a closed loop is proportional to the total current passing through the loop, including both conduction current and displacement current arising from changing electric fields. This law plays a crucial role in understanding the behavior of electromagnetic fields in various physical systems.
+
