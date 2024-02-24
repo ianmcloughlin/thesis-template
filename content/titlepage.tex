@@ -6,22 +6,31 @@
 \newcommand{\thesistype}{PhD Thesis}
 \newcommand{\thesisdate}{Submitted: \today}
 \newcommand{\thesisdepartment}{Department of Computer Science and Applied Physics}
+\newcommand{\thesisfunding}{This Research has been supported by the Atlantic Technological University under the Postgraduate Research Training Programme in Modelling and Computation for Health and Society (MOCHAS PRTP).}
 %% End of things to change.
 
 % The title page.
 \begin{titlingpage}
   
-  {\Huge\noindent\textbf{\thesistitle}}\\[12mm]
-  {\LARGE\noindent\textbf{\thesisauthor}}\\[40mm]
-  {\Large\noindent\textbf{\thesistype}}\\[4mm]
-  {\Large\thesisdepartment}\\[4mm]
-  {\Large\noindent\thesisadvisor}\\[4mm]
-  {\Large\thesisdate}\\[4mm]
+  {\noindent\Huge\textbf{\thesistitle}\par}
+  \vspace{12mm}
+  {\noindent\LARGE\textbf{\thesisauthor}\par}
+  \vspace{32mm}
+  {\noindent\Large\textbf{\thesistype}\par}
+  \vspace{4mm}
+  {\noindent\Large\thesisdepartment\par}
+  \vspace{4mm}
+  {\noindent\Large\thesisadvisor\par}
+  \vspace{4mm}
+  {\noindent\Large\thesisdate\par}
+  \vspace{32mm}
+  {\noindent\thesisfunding\par}
+
 
   \AddToHookNext{shipout/background}{
     \begin{tikzpicture}[remember picture, overlay, inner sep=0pt, outer sep=0pt]
-    \node[anchor=south east] at ([xshift=-10mm,yshift=16mm]current page.south east) {
-      \includegraphics[width=8cm]{img/atu_logo.png}
+    \node[anchor=south east] at ([xshift=-12mm,yshift=12mm]current page.south east) {
+      \includegraphics[width=6cm]{img/atu_logo.png}
     };
     \end{tikzpicture}
   }

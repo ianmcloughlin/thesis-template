@@ -8,7 +8,7 @@
 \usepackage[UKenglish]{isodate}
 \cleanlookdateon
 % Page geometry.
-\usepackage[a4paper,top=32mm,bottom=32mm,left=32mm,right=32mm,bindingoffset=6mm]{geometry}
+\usepackage[a4paper,top=32mm,bottom=42mm,left=32mm,right=32mm,bindingoffset=6mm]{geometry}
 % Palatino.
 \usepackage{newpxtext}
 % Helvetica.
@@ -20,7 +20,7 @@
 % Enables the use of colour.
 \usepackage{xcolor}
 % Syntax high-lighting for code. Requires Python's pygments.
-\usepackage{minted}
+\usepackage[chapter]{minted}
 % Diagrams.
 \usepackage{tikz}
 % Allows for columns spanning multiple rows in tables.
@@ -58,15 +58,13 @@
 % Better table columns.
 \usepackage{array}
 % Bibliography.
-\usepackage[style=verbose, autocite=footnote, backend=biber]{biblatex}
+\usepackage[style=ieee, backend=biber]{biblatex}
 % Images.
 \usepackage{graphicx}
 % Filler text.
 \usepackage{lipsum}
 % Hyperlinks.
 \usepackage{hyperref}
-% Headers. 
-\usepackage{fancyhdr}
 
 
 % Various tikz libraries.
@@ -122,8 +120,9 @@
 \definecolor{atuoffwhite}{RGB}{237,237,237}
 
 % Set minted up.
-\usemintedstyle{igor}
-\setminted{frame=single, framesep=2mm, bgcolor=atuwhite, linenos}
+\usemintedstyle{colorful}
+\setminted{frame=lines, framesep=4mm, bgcolor=atuwhite, autogobble, ignorelexererrors}
+\renewcommand{\theFancyVerbLine}{\textcolor[RGB]{0,91,94}{\tiny\arabic{FancyVerbLine}}}
 
 % Prevent minted from showing errors.
 \makeatletter
@@ -131,11 +130,7 @@
 \makeatother
 
 % Change how hyperlinks are displayed.
-\hypersetup{allcolors=atunavy}
+\hypersetup{colorlinks, allcolors=atuteal}
 
-\pagestyle{fancy}
-
-\fancyhead{}
-\fancyfoot{\thepage}
-
-
+% One and a helf spacing.
+\OnehalfSpacing
