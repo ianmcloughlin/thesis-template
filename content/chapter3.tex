@@ -62,4 +62,24 @@ Check out the nice graphs in Figure \ref{tikz:graphs}.
   \label{tikz:graphs}
 \end{figure}
 
-\lipsum[26-28]
+\subsection{Vector Spaces}
+
+A \textbf{vector space} $V$ over a field $\mathbb{F}$ is a set equipped with two operations:
+
+\begin{itemize}
+    \item Vector addition: $+: V \times V \rightarrow V$, denoted as $(\mathbf{v}, \mathbf{w}) \mapsto \mathbf{v} + \mathbf{w}$.
+    \item Scalar multiplication: $\cdot: \mathbb{F} \times V \rightarrow V$, denoted as $(\lambda, \mathbf{v}) \mapsto \lambda \mathbf{v}$.
+\end{itemize}
+
+These operations satisfy the following properties for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and $\lambda, \mu \in \mathbb{F}$:
+
+\begin{enumerate}
+    \item \textbf{Addition is commutative}: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$.
+    \item \textbf{Addition is associative}: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$.
+    \item \textbf{Additive identity}: There exists a vector $\mathbf{0} \in V$ such that $\mathbf{v} + \mathbf{0} = \mathbf{v}$ for all $\mathbf{v} \in V$.
+    \item \textbf{Additive inverse}: For every vector $\mathbf{v} \in V$, there exists a vector $-\mathbf{v} \in V$ such that $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$.
+    \item \textbf{Scalar multiplication is distributive over vector addition}: $\lambda (\mathbf{v} + \mathbf{w}) = \lambda \mathbf{v} + \lambda \mathbf{w}$.
+    \item \textbf{Scalar multiplication is distributive over scalar addition}: $(\lambda + \mu) \mathbf{v} = \lambda \mathbf{v} + \mu \mathbf{v}$.
+    \item \textbf{Scalar multiplication is associative}: $(\lambda \mu) \mathbf{v} = \lambda (\mu \mathbf{v})$.
+    \item \textbf{Scalar multiplication identity}: $1 \cdot \mathbf{v} = \mathbf{v}$, where $1$ is the multiplicative identity in $\mathbb{F}$.
+\end{enumerate}
