@@ -5,8 +5,8 @@
 \LoadClass[oneside]{memoir}
 
 % Font.
-\usepackage{lmodern} % monospace font
- 
+% \usepackage{lmodern} % monospace font
+\usepackage[]{roboto}
 % More math layouts, equation arrays, etc.
 \usepackage{amsmath}
 % More math symbols.
