@@ -4,12 +4,8 @@
 % Based on Memoir class.
 \LoadClass[oneside]{memoir}
 
+% Font.
 \usepackage{lmodern} % monospace font
-\usepackage[T1]{fontenc}
-\renewcommand{\ttdefault}{lmtt} % MONO Latin Modern Font % T1 encoding of cmtt font style  
-\renewcommand{\rmdefault}{lmr} % SERIF Latin Modern Font % T1 encoding of cmr font style
-\renewcommand{\sfdefault}{lmss} % SANS Latin Modern Font % T1 encoding of cmss font style
-
  
 % More math layouts, equation arrays, etc.
 \usepackage{amsmath}
