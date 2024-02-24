@@ -2,69 +2,50 @@
 \ProvidesClass{atu_thesis}[2024/02/23 Atlantic Technological University Thesis Template.]
 
 % Based on Memoir class.
-\LoadClass{memoir}
+\LoadClass[oneside]{memoir}
 
-% Change date style.
-\usepackage[UKenglish]{isodate}
-\cleanlookdateon
-% Page geometry.
-\usepackage[a4paper,top=32mm,bottom=42mm,left=32mm,right=32mm,bindingoffset=6mm]{geometry}
-% Palatino.
-\usepackage{newpxtext}
-% Helvetica.
-\usepackage{helvet}
-% Bera Mono.
-\usepackage{beramono}
+\usepackage{lmodern} % monospace font
+\usepackage[T1]{fontenc}
+\renewcommand{\ttdefault}{lmtt} % MONO Latin Modern Font % T1 encoding of cmtt font style  
+\renewcommand{\rmdefault}{lmr} % SERIF Latin Modern Font % T1 encoding of cmr font style
+\renewcommand{\sfdefault}{lmss} % SANS Latin Modern Font % T1 encoding of cmss font style
+
+ 
 % More math layouts, equation arrays, etc.
 \usepackage{amsmath}
+% More math symbols.
+\usepackage{amssymb}
+% More math fonts, like mathbb.
+\usepackage{amsfonts}
+% More theorem environments. 
+\usepackage{amsthm}
+
 % Enables the use of colour.
 \usepackage{xcolor}
 % Syntax high-lighting for code. Requires Python's pygments.
 \usepackage[chapter]{minted}
 % Diagrams.
 \usepackage{tikz}
-% Allows for columns spanning multiple rows in tables.
-\usepackage{multirow}
 % Better looking tables, including nicer borders.
 \usepackage{booktabs}
-% More math symbols.
-\usepackage{amssymb}
-% More math fonts, like mathbb.
-\usepackage{amsfonts}
-% More theorem environments.
-\usepackage{amsthm}
-% More column formats for tables.
-\usepackage{array}
 % Adjust the sizes of box environments.
 \usepackage{adjustbox}
 % Better looking single quotes in verbatim and minted environments.
 \usepackage{upquote}
-% Better blank space decisions.
-\usepackage{xspace}
 % Better looking tikz trees.
 \usepackage{forest}
 % For plotting.
 \usepackage{pgfplots}
-% For more font sizes.
-\usepackage{anyfontsize}
-% Enables the use of umlauts and other accents.
-\usepackage[utf8]{inputenc}
-% Settings for captions, such as sideways captions.
-\usepackage{caption}
-% Symbols for units, like degrees and ohms.
-\usepackage{gensymb}
-% Calculates the number of pages.
-\usepackage{lastpage}
-% Better table columns.
-\usepackage{array}
-% Bibliography.
-\usepackage[style=ieee, backend=biber]{biblatex}
 % Images.
 \usepackage{graphicx}
-% Filler text.
-\usepackage{lipsum}
 % Hyperlinks.
 \usepackage{hyperref}
+
+% Bibliography.
+\usepackage[style=ieee, backend=biber]{biblatex}
+
+% Filler text.
+\usepackage{lipsum}
 
 
 % Various tikz libraries.
@@ -102,9 +83,6 @@
 % PGF plots version.
 \pgfplotsset{compat=1.18}
 
-% Fixed column width, centered.
-\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
-
 % ATU colours.
 \definecolor{atuteal}{RGB}{0,91,94}
 \definecolor{atunavy}{RGB}{0,26,121}
@@ -124,13 +102,8 @@
 \setminted{frame=lines, framesep=4mm, bgcolor=atuwhite, autogobble, ignorelexererrors}
 \renewcommand{\theFancyVerbLine}{\textcolor[RGB]{0,91,94}{\tiny\arabic{FancyVerbLine}}}
 
-% Prevent minted from showing errors.
-\makeatletter
-\expandafter\def\csname PYGdefault@tok@err\endcsname{\def\PYGdefault@bc##1{{\strut ##1}}}
-\makeatother
-
 % Change how hyperlinks are displayed.
-\hypersetup{colorlinks, allcolors=atuteal}
+\hypersetup{colorlinks, allcolors=atunavy}
 
 % One and a helf spacing.
 \OnehalfSpacing
