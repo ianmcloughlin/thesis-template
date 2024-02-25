@@ -1,31 +1,135 @@
 \chapter{Literature}
 \label{section:literature}
 
-One of the most important parts of a thesis is an overview of work done by
-others.
-This gives the reader confidence that you are speaking from a knowledgable
-position, that you have done your hoemwork on the subject.
-You should not just list out a bunch of papers you have found in journals.
-Rather, you need to find the most relevant papers, describe their main results
-and how they relate to your work, and also give a brief critique of the work if
-necessary.
+A comprehensive literature review is a critical component of any academic research, including a Ph.D. thesis.
+It serves several purposes, as follows.
+
+\subsection{Establishing Context}
+Provide background information on the topic of study to contextualize your research within existing knowledge and scholarship.
+Identify key concepts, theories, and methodologies relevant to your research.
+
+\subsection{Identifying Gaps and Opportunities}
+Identify gaps, inconsistencies, or contradictions in the existing literature that your research aims to address.
+Highlight areas where further research is needed or opportunities for innovation exist.
+
+\subsection{Synthesizing Previous Research}
+Summarize and synthesize findings from previous studies, organizing them thematically or chronologically.
+Evaluate the strengths and weaknesses of previous research methodologies, data sources, and analytical approaches.
+    
+\subsection{Demonstrating Scholarly Engagement}
+Demonstrate your familiarity with the current state of research in your field and your ability to critically evaluate and synthesize existing literature.
+Establish your credibility as a researcher by showing that you are building upon established knowledge and contributing to ongoing scholarly conversations.
+    
+\subsection{Supporting Methodological Choices}
+Justify your research methodology by explaining how it builds upon or diverges from previous approaches.
+Discuss the suitability of different research methods and theoretical frameworks for addressing your research questions.
+    
+\subsection{Highlighting Significance and Contribution}
+Emphasize the significance of your research by showing how it fills a gap, extends existing knowledge, or offers new insights.
+Articulate the specific contribution your research makes to the field and how it advances scholarship.
+    
+\subsection{Citing Sources Appropriately}
+Ensure that you accurately cite all sources consulted in your literature review according to the citation style guidelines required by your institution or discipline.
+
+\subsection{Maintaining Focus and Organization}
+Keep your literature review focused and well-organized, with clear sections or subsections devoted to different themes, theories, or methodologies.
+Provide transitions and connections between different sections to maintain coherence and flow.
+
+\subsection{Remaining Critical and Objective}
+Remain critical and objective in your evaluation of previous research, acknowledging both strengths and limitations.
+Avoid bias and strive to present a balanced and comprehensive overview of the literature.
+
+\subsection{Updating and Revising}
+Continuously update and revise your literature review as your research progresses and new relevant studies are published.
+Be open to incorporating feedback from peers, advisors, and reviewers to strengthen your literature review.
+
+By including these elements in your literature review, you can effectively situate your research within the broader scholarly conversation, demonstrate your expertise in the field, and lay the groundwork for your own empirical investigation.
 
 
-\section{Sources}
+\section{Maxwell's Equations}
+Maxwell's equations are a set of four fundamental equations that describe the behavior of electric and magnetic fields, as well as their interaction with matter.
+They are the cornerstone of classical electromagnetism and are essential for understanding a wide range of phenomena in physics and engineering.
 
-Look at the beautiful mathematics in this equation:
-\begin{equation}
-  \label{eq:euler}
-  e^{i\pi} + 1 = 0
-\end{equation}
-It belongs to Euler, and is often cited as an example of the beauty of mathematics.
+\subsection{Gauss's Law for Electricity}
+Gauss's Law for Electricity is one of the four fundamental equations in classical electromagnetism, formulated by Carl Friedrich Gauss.
+It describes the relationship between the electric flux through a closed surface and the electric charge enclosed within that surface.
+Mathematically, Gauss's Law for Electricity is expressed as:
+\[
+\oint_S \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\text{enc}}}{\varepsilon_0}
+\]
+Here's an explanation of the key components of Gauss's Law for Electricity:
+\begin{itemize}
+  \item $\oint_S$ represents a closed surface integral over a closed surface $S$. This means that we are summing the electric field ($\mathbf{E}$) over all infinitesimal areas ($d\mathbf{A}$) of the closed surface $S$.
+  
+  \item $\mathbf{E}$ is the electric field vector at each point on the surface. It represents the force experienced by a unit positive charge placed at that point.
+  
+  \item $d\mathbf{A}$ is a vector representing an infinitesimal area element of the surface. It is oriented perpendicular to the surface at each point.
+  
+  \item $Q_{\text{enc}}$ is the total electric charge enclosed within the closed surface $S$. This includes the sum of all positive and negative charges within the enclosed region.
+  
+  \item $\varepsilon_0$ is the permittivity of free space, a fundamental constant in electromagnetism. It represents the ability of a material to permit the formation of an electric field in response to an applied electric field.
+\end{itemize}
 
-The sources of information you use are important too.
-You'll need to use the academic literature, but you'll also likely need to use
-technical specifications and other non-academic sources of literature.
-They should all be referenced.
-See the \texttt{bibliography.bib} file for information about referencing.
+In simpler terms, Gauss's Law for Electricity states that the total electric flux through a closed surface is proportional to the total electric charge enclosed within that surface, with the constant of proportionality being the permittivity of free space.
+In other words, it quantifies how much electric field passes through a closed surface due to the presence of electric charges inside that surface.
 
-\lipsum[16-25]
+
+\subsection{Gauss's Law for Magnetism}
+Gauss's Law for Magnetism states that the magnetic flux through any closed surface is always zero.
+Mathematically, it is expressed as:
+\[
+\oint_S \mathbf{B} \cdot d\mathbf{A} = 0
+\]
+Here's an explanation of the key components of Gauss's Law for Magnetism:
+\begin{itemize}
+  \item $\oint_S$ represents a closed surface integral over a closed surface $S$. This means that we are summing the magnetic field ($\mathbf{B}$) over all infinitesimal areas ($d\mathbf{A}$) of the closed surface $S$.
+  
+  \item $\mathbf{B}$ is the magnetic field vector at each point on the surface. Unlike electric fields, magnetic fields do not have sources or sinks (monopoles), so the magnetic flux through any closed surface is always zero.
+  
+  \item $d\mathbf{A}$ is a vector representing an infinitesimal area element of the surface. It is oriented perpendicular to the surface at each point.
+\end{itemize}
+
+In summary, Gauss's Law for Magnetism implies that there are no magnetic monopoles (isolated north or south poles), and the magnetic flux through any closed surface is always zero, indicating that magnetic field lines neither start nor end but always form closed loops.
+
+
+\subsection{Faraday's Law of Induction}
+Faraday's Law of Induction describes how a changing magnetic field induces an electromotive force (EMF) and hence an electric current in a conducting loop.
+Mathematically, it is expressed as:
+\[
+\oint_C \mathbf{E} \cdot d\boldsymbol{\ell} = -\frac{d\Phi_B}{dt}
+\]
+Here's an explanation of the key components of Faraday's Law of Induction:
+\begin{itemize}
+  \item $\oint_C$ represents a closed path integral around a closed loop $C$. This means that we are summing the electric field ($\mathbf{E}$) around the closed loop $C$.
+  
+  \item $\mathbf{E}$ is the induced electric field within the conducting loop. It is created by a changing magnetic flux through the loop according to Faraday's law.
+  
+  \item $d\boldsymbol{\ell}$ is a vector representing an infinitesimal displacement along the closed loop $C$.
+  
+  \item $d\Phi_B/dt$ represents the rate of change of magnetic flux ($\Phi_B$) through the surface enclosed by the loop with respect to time. The negative sign indicates that the induced EMF and hence the induced electric field opposes the change in magnetic flux.
+\end{itemize}
+
+In summary, Faraday's Law of Induction states that a changing magnetic field induces an electric field and hence an electromotive force (EMF) in any closed conducting loop, producing an electric current in the loop. This phenomenon forms the basis of many practical devices, such as electric generators and transformers.
+
+
+\subsection{Ampere's Circuital Law (with Maxwell's addition)}
+
+Amp\`ere's Circuital Law relates the magnetic field around a closed loop to the electric current passing through the loop. With Maxwell's addition, it accounts for the displacement current, which arises from changing electric fields. Mathematically, it is expressed as:
+\[
+\oint_C \mathbf{B} \cdot d\boldsymbol{\ell} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{d\Phi_E}{dt} \right)
+\]
+Here's an explanation of the key components of Amp\`ere's Circuital Law (with Maxwell's addition):
+\begin{itemize}
+  \item $\oint_C$ represents a closed path integral around a closed loop $C$. This means that we are summing the magnetic field ($\mathbf{B}$) around the closed loop $C$.
+  \item $\mathbf{B}$ is the magnetic field vector at each point along the closed loop $C$.
+  \item $d\boldsymbol{\ell}$ is a vector representing an infinitesimal displacement along the closed loop $C$.
+  \item $\mu_0$ is the permeability of free space, a fundamental constant in electromagnetism.
+  \item $I_{\text{enc}}$ is the total current passing through the loop $C$. This includes both conduction current and displacement current.
+  \item $\varepsilon_0$ is the permittivity of free space, another fundamental constant in electromagnetism.
+  \item $\frac{d\Phi_E}{dt}$ represents the rate of change of electric flux ($\Phi_E$) through the surface enclosed by the loop with respect to time. This gives rise to the displacement current, which is included in Amp\`ere's law with Maxwell's addition.
+\end{itemize}
+
+In summary, Amp\`ere's Circuital Law with Maxwell's addition states that the magnetic field around a closed loop is proportional to the total current passing through the loop, including both conduction current and displacement current arising from changing electric fields. This law plays a crucial role in understanding the behavior of electromagnetic fields in various physical systems.
+
 
 
