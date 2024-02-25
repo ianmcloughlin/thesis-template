@@ -5,8 +5,9 @@
 \LoadClass[oneside]{memoir}
 
 % Font.
-% \usepackage{lmodern} % monospace font
 \usepackage[]{roboto}
+% Dirac notation.
+\usepackage{braket}
 % More math layouts, equation arrays, etc.
 \usepackage{amsmath}
 % More math symbols.

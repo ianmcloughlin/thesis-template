@@ -62,7 +62,7 @@ Check out the nice graphs in Figure \ref{tikz:graphs}.
   \label{tikz:graphs}
 \end{figure}
 
-\subsection{Vector Spaces}
+\section{Vector Spaces}
 
 A \textbf{vector space} $V$ over a field $\mathbb{F}$ is a set equipped with two operations:
 
@@ -70,8 +70,7 @@ A \textbf{vector space} $V$ over a field $\mathbb{F}$ is a set equipped with two
     \item Vector addition: $+: V \times V \rightarrow V$, denoted as $(\mathbf{v}, \mathbf{w}) \mapsto \mathbf{v} + \mathbf{w}$.
     \item Scalar multiplication: $\cdot: \mathbb{F} \times V \rightarrow V$, denoted as $(\lambda, \mathbf{v}) \mapsto \lambda \mathbf{v}$.
 \end{itemize}
-
-These operations satisfy the following properties for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and $\lambda, \mu \in \mathbb{F}$:
+These operations must satisfy the following properties for all $\mathbf{u}, \mathbf{v}, \mathbf{w} \in V$ and $\lambda, \mu \in \mathbb{F}$:
 
 \begin{enumerate}
     \item \textbf{Addition is commutative}: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$.
@@ -83,3 +82,45 @@ These operations satisfy the following properties for all $\mathbf{u}, \mathbf{v
     \item \textbf{Scalar multiplication is associative}: $(\lambda \mu) \mathbf{v} = \lambda (\mu \mathbf{v})$.
     \item \textbf{Scalar multiplication identity}: $1 \cdot \mathbf{v} = \mathbf{v}$, where $1$ is the multiplicative identity in $\mathbb{F}$.
 \end{enumerate}
+
+
+\section{Dirac Notation}
+Dirac notation, also known as bra-ket notation, is a powerful and concise mathematical notation used extensively in quantum mechanics.
+It was introduced by the physicist Paul Dirac and provides a convenient way to represent vectors, linear operators, and inner products in quantum mechanics.
+Here's a breakdown of the components of Dirac notation:
+
+\begin{description}
+  \item[Ket notation $\ket{\psi}$:]
+  A ket is represented by a column vector enclosed within vertical bars.
+  It represents a state vector in a complex vector space.
+  For example, $\ket{\psi}$ could represent the state of a quantum system.
+
+  \item[Bra notation $\bra{\psi}$:]
+  A bra is represented by a row vector enclosed within angular brackets.
+  It represents the complex conjugate transpose of a ket vector.
+  If $\ket{\psi}$ represents a state vector, then $\ket{\psi}$ represents the corresponding bra vector.
+
+  \item[Inner product ($\braket{\psi \mid \psi}$):]
+  The inner product of two vectors is represented by placing a bra vector on the left and a ket vector on the right, enclosed within angular brackets.
+  It yields a complex number and is a measure of the "overlap" between the two vectors.
+  In quantum mechanics, the inner product is used to calculate probabilities and to determine the expectation values of observables.
+
+  \item[Outer product ($\ket{\psi}\bra{\phi}$):]
+  The outer product of two vectors is represented by placing a ket vector on the left and a bra vector on the right.
+  It results in a linear operator known as a ket-bra or dyad, which maps one vector to another.
+  In quantum mechanics, outer products are used to represent quantum operators.
+
+  \item[Operators ($A\ket{\psi}$):]
+  If $A$ is a linear operator, its action on a ket vector $\ket{\psi}$ is represented by placing the operator to the left of the ket vector.
+  This notation shows the result of applying the operator to the state vector.
+\end{description}
+Dirac notation offers several advantages:
+\begin{description}
+    \item[Clarity and Conciseness:]
+    It provides a concise representation of complex mathematical objects, making expressions and calculations easier to write and understand.
+    \item[Flexibility:]
+    It can be easily extended to represent complex operations and concepts in quantum mechanics, such as composite systems, entanglement, and measurement.
+    \item[Computational Efficiency:]
+    Dirac notation simplifies many calculations in quantum mechanics, such as computing inner products, expectation values, and transition probabilities.
+\end{description}
+Overall, Dirac notation is a fundamental tool in quantum mechanics, enabling physicists to express and manipulate quantum states and operations in a clear and efficient manner.
