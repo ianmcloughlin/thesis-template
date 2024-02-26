@@ -1,4 +1,3 @@
-
 %% Change these:
 \newcommand{\thesistitle}{Thesis Template Created with a Little Help from Artifical Intelligence}
 \newcommand{\thesisauthor}{by Ian McLoughlin}
@@ -26,12 +25,12 @@
   \vspace{26mm}
   {\noindent\thesisfunding\par}
 
-
+  % Logo in background.
   \AddToHookNext{shipout/background}{
     \begin{tikzpicture}[remember picture, overlay, inner sep=0pt, outer sep=0pt]
-    \node[anchor=south east] at ([xshift=-32mm,yshift=12mm]current page.south east) {
-      \includegraphics[width=6cm]{img/atu_logo.png}
-    };
+      \node[anchor=south east] at ([xshift=-32mm,yshift=12mm]current page.south east) {
+        \includegraphics[width=6cm]{img/atu_logo.png}
+      };
     \end{tikzpicture}
   }
   

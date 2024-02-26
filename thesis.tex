@@ -1,22 +1,21 @@
 \documentclass[12pt, a4paper]{atu_thesis}
 
-% Bibliography.
-\addbibresource{content/99_bibliography.bib}
-
-% Begin the document.  
+% Bibliography database.
+\addbibresource{content/89_bibliography.bib}
+  
 \begin{document}
   
-  % Include the titlepage  
-  \input{content/___titlepage.tex}
+  % Title page  
+  \input{content/80_titlepage.tex}  
   
   % Set the correct page number.
   \setcounter{page}{2}
 
-  % Insert the table of contents.
   \tableofcontents
 
-  % Include the chapter.
-  \input{content/00_abstract.tex}
+  % Include content.
+  \input{content/81_abstract.tex}
+  \input{content/82_author.tex}
   \input{content/01_introduction.tex}
   \input{content/02_literature.tex}
   \input{content/03_methodology.tex}
@@ -24,8 +23,6 @@
   \input{content/05_results.tex}
   \input{content/06_conclusion.tex}
 
-  % Bibliography.
   \printbibliography
   
-% End the document.
 \end{document}
